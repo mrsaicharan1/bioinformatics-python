@@ -10,14 +10,14 @@ def get_protein_count_info():
             protein_count[protein] = protein_count[protein] + 1
     return protein_count
 
-max_count = -1
+min_count = 100000
 protein_count = get_protein_count_info()
 for protein, count in protein_count.items():
-    if count > max_count:
-        max_count = count
-        max_protein = protein
+    if count < min_count:
+        min_count = count
+        min_protein = protein
     
-print(max_count, max_protein)
+print(min_count, min_protein)
 print(protein_count)
 
 
