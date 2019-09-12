@@ -16,7 +16,7 @@ for protein, count in protein_count.items():
     if count < min_count:
         min_count = count
         min_protein = protein
-    
+
 print(min_count, min_protein)
 print(protein_count)
 
