@@ -15,3 +15,10 @@ print(max_count, max_protein)
 
 
 
+min_count = 100000
+for protein_info in protein_count[1:]:
+    if (len(protein_info[1]) < min_count):
+        min_count = len(protein_info[1])
+        min_protein = protein_info[0]
+
+print(min_count, min_protein)

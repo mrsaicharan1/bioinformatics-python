@@ -22,5 +22,5 @@ def get_protein_info():
         protein_tuples.append([organ, protein])
     return protein_tuples
 
-pp.pprint(get_protein_info())
+# pp.pprint(get_protein_info())
 
