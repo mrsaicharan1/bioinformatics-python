@@ -6,7 +6,7 @@ def get_protein_count_info():
     for proteins in proteins_info.values():
         for protein in proteins:
             if protein not in protein_count.keys():
-                protein_count[protein] = 0 
+                protein_count[protein] = 1
             protein_count[protein] = protein_count[protein] + 1
     return protein_count
 
@@ -17,7 +17,6 @@ for protein, count in protein_count.items():
         max_count = count
         max_protein = protein
     
-print(max_count, max_protein)
 print(protein_count)
 
 

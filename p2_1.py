@@ -1,3 +1,5 @@
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
 def all_proteins():
     with open('input.txt','r') as p:
         lines=p.readlines()
@@ -14,5 +16,7 @@ def get_protein_info():
             protein_info[organ] = proteins
     return protein_info
 
-# print(get_protein_info())
+# protein_name = input()
+# pp.pprint(get_protein_info())
+# print(get_protein_info()[protein_name])
 
