@@ -16,7 +16,4 @@ def get_protein_info():
             protein_info[organ] = proteins
     return protein_info
 
-# protein_name = input()
-# pp.pprint(get_protein_info())
-# print(get_protein_info()[protein_name])
 
